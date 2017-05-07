@@ -119,13 +119,9 @@ int main(){
         std::cin >> row >> col;
         init();
         // printf("Scenario: #%d:\n", c);
-        std::cout << "Scenario: #:" << c <<std::endl;
-        for(int i = 1; i <= row; ++i){
-            for(int j = 1; j <=col; ++j){
-                travel(i, j);
-            }
-        }
-        // travel(1, 1);
+        std::cout << "Scenario #" << c << ":" << std::endl;
+        
+        travel(1, 1);
         for(int i = count ; i >= 1; --i) std::cout << path[i].x << path[i].y;
         if(mode == 0) std::cout << "impossible";
         std::cout << std::endl << std::endl;
