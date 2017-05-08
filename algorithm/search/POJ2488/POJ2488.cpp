@@ -25,9 +25,6 @@ int check(){
 
 
 int travel(int i, int j){
-    // if(i <= 0 | j <= 0 | i > row | j > col) return false;
-    // if(visit[i][j] != 1) visit[i][j] = 1;
-    // else return false;
     if(i > 0 && j > 0 && i <= row && j <=col && visit[i][j] != 1){
         visit[i][j] = 1;
         travel(i-1, j-2);
